@@ -1,11 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Assignment-4</title>
-</head>
-<body>
-     
-</body>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind+Daisy UI -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+      <header class="w-4/5 mx-auto pt-14">
+    <h1 class="text-3xl font-bold text-[#002C5C] pb-4">Job Application Tracker</h1>
+
+    <div class="grid grid-cols-3 gap-8 ">
+      <div class="w-[330px] bg-base-100 shadow-sm rounded-lg py-5 pl-5">
+            <p id="total" class="font-bold">Total</p>
+            <p id="total-num" class="font-bold">0</p>
+      </div>
+      <div class="w-[330px] bg-base-100 shadow-sm rounded-lg py-5 pl-5" >
+            <p id="interview" class="font-bold">Interview</p>
+            <p id="interview-num" class="text-[#10B981] font-bold">0</p>
+      </div>
+      <div class="w-[330px] bg-base-100 shadow-sm rounded-lg py-5 pl-5">
+            <p id="rejected" class="font-bold">Rejected</p>
+             <p id="rejected-num" class="text-[#EF4444] font-bold">0</p>
+      </div>
+
+    </div>
+    </header>
+    
+  </body>
 </html>
