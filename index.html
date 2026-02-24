@@ -17,7 +17,7 @@
     <div class="grid grid-cols-3 gap-8 ">
       <div class="w-[330px] bg-base-100 shadow-sm rounded-lg py-5 pl-5">
             <p class="font-medium text-[#323B49]">Total</p>
-            <p id="total" class="font-bold text-2xl">8</p>
+            <p id="total" class="font-bold text-2xl">0</p>
       </div>
       <div class="w-[330px] bg-base-100 shadow-sm rounded-lg py-5 pl-5" >
             <p class="font-medium text-[#323B49]">Interview</p>
@@ -33,7 +33,7 @@
      
     <hr class="my-7 w-4/5 mx-auto text-[#E6E7E9] ">
 
-    <main class="w-4/5 mx-auto">
+    <main id="mainContainer" class="w-4/5 mx-auto">
 
       <section class="">
         <div class="flex justify-between">
@@ -49,15 +49,18 @@
 
       <div>
             <div class="">
-           <button id="all-btn" class="btn flex-col size-24 py-4 h-5 btn-primary btn-soft">All</button>
-           <button id="interview-btn" class="btn flex-col size-24 py-4 h-5 btn-primary btn-soft">Interview</button>
-           <button id="rejected-btn" class="btn flex-col size-24 py-4 h-5 btn-primary btn-soft">Rejected</button>
+           <button onclick="toggleStyle('all-btn')" id="all-btn" class="btn flex-col size-24 py-4 h-5 bg-base-100 shadow-sm rounded-md bg-[#3B82F6]">All</button>
+           <button onclick="toggleStyle('interview-btn')" id="interview-btn" class="btn flex-col size-24 py-4 h-5 bg-base-100 shadow-sm rounded-md ">Interview</button>
+           <button onclick="toggleStyle('rejected-btn')" id="rejected-btn" class="btn flex-col size-24 py-4 h-5 bg-base-100 shadow-sm rounded-md ">Rejected</button>
             </div>
       </div>
 
       </section>
 
-      <section id="jobs-card " class="pt-5">
+     <!-- Filtered section -->
+      <section id="filtered-section"></section>
+
+      <section id="jobsCard" class="pt-5">
           <!-- card-1 -->
            <div class=" flex justify-between bg-base-100 shadow-sm rounded-lg">
             <div class="p-[24px]">
@@ -67,8 +70,8 @@
                         <p class="text-[#64748B] py-5">Remote • Full-time • $130,000 - $175,000</p>
                   </div>
 
-                  <p id="status" class="bg-[#EEF4FF] rounded-[4px] w-32 text-center py-2 ">Not Applied</p>
-                  <p class="text-[#64748B] pt-2">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                  <p class="badge bg-[#EEF4FF] rounded-[4px] w-32 text-center py-2">Not Applied</p>
+                  <p class=" text-[#64748B] pt-2">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
 
                   <div class="pt-3 flex gap-2">
                         <button id="click-interview" class="border-[1.5px] text-[#10B981] rounded-[4px] py-2 px-3 font-bold">Interview</button>
